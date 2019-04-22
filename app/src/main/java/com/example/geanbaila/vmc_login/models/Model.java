@@ -18,7 +18,7 @@ public class Model {
             StrictMode.setThreadPolicy(policy);
             if (connection == null) {
                 Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-                connection = DriverManager.getConnection("jdbc:jtds:sqlserver://192.168.0.32:1433;databaseName=agenda", "sa", "1234");
+                connection = DriverManager.getConnection("jdbc:jtds:sqlserver://192.168.0.36:1433;databaseName=agenda", "sa", "1234");
                 Log.i("<><><><><><><><>", "una nueva conexión ha sido abierta");
             }
         }catch (Exception e) {
